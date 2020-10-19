@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library (Odin Project)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Number of pages</th>
+                    <th>Read?</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <button type="button" id="open-form-button">Add book!</button>
+    </div>
+
+    <div id="form-popup">
+        <form name="add-form" action="" id="form-container">
+            <div class="input-container">
+                <label for="title">Title:</label>
+                <input type="text" name="title" class="text-input" id="title">
+            </div>
+            <div class="input-container">
+                <label for="author">Author:</label>
+                <input type="text" name="author" class="text-input" id="author">
+            </div>
+            <div class="input-container">
+                <label for="pages">Num. of pages:</label>
+                <input type="number" name="pages" class="text-input" id="pages">
+            </div>
+            <div class="input-container">
+                <label for="read">Read?</label>
+                <input type="checkbox" name="read" id="read">
+            </div>
+            <div class="form-buttons">
+                <button type="button" id="add-button">Add book!</button>
+                <button type="button" id="cancel-button">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

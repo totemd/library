@@ -1,0 +1,146 @@
+:root {
+    --primary: #1B856E;	/* Main Primary color */
+    --primary-darkest: #010403;
+    --primary-dark: #0F4337;
+    --primary-light: #35BA9C;
+    --primary-lightest: #60FFDB;
+
+    --secondary: #254F88;	/* Main Secondary color (1) */
+    --secondary-darkest: #010204;
+    --secondary-dark: #142844;
+    --secondary-light: #4175BD;
+    --secondary-lightest: #6EABFF;
+
+    --tertiary: #4AB124;	/* Main Secondary color (2) */
+    --tertiary-darkest: #020501;
+    --tertiary-dark: #265914;
+    --tertiary-light: #6CE340;
+    --tertiary-lightest: #8BFF60;
+}
+
+html {
+    font-family: 'Karla', sans-serif;
+    font-size: small;
+    background-color: #EEE
+}
+
+.table-container {
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: auto;
+    width: 80%;
+    border: 2px solid var(--primary-dark);
+}
+
+thead {
+    background-color: var(--primary-darkest);
+    color: var(--primary-lightest);
+}
+
+tbody {
+    background-color: var(--primary-lightest);
+    color: var(--primary-darkest)
+}
+
+td, th {
+    border: 1px solid var(--primary-dark);
+    text-align: left;
+    padding: 0.5rem;
+}
+
+[type="checkbox"] {
+    appearance: none;
+    border: 1px solid var(--primary-dark);
+    width: 1.2em;
+    height: 1.2em;
+    display: inline-block;
+    position: relative;
+}
+
+[type="checkbox"]:active {
+    background-color: var(--primary-lightest)
+}
+
+[type="checkbox"]:checked {
+    background-color: var(--primary-darkest)
+}
+
+[type="checkbox"]:checked:after{
+    content: "\2714";
+    position: absolute;
+    font-size: large;
+    top: -6px;
+    left: 0px;
+    color: var(--primary-lightest);
+}
+
+.delete-button {
+    background-color: var(--secondary-light);
+}
+
+.delete-button:hover {
+    background-color: var(--secondary);
+}
+
+.delete-button:active {
+    background-color: var(--secondary-lightest);
+}
+
+.form-buttons {
+    height: 40px;
+}
+
+button {
+	width: 140px;
+	margin: 0;
+	padding: 0.5rem;
+	border: 1px solid var(--tertiary-darkest);
+	background-color: var(--tertiary-light);
+	height: 40px;
+	text-align: left;
+}
+
+#open-form-button {
+    margin: 10px;
+    width: 150px;
+}
+
+#form-popup {
+    display: none;
+}
+
+#form-container {
+	max-width: 300px;
+	padding: 20px 10px 10px 10px;
+	background-color: var(--primary-lightest);
+	border: 2px solid var(--primary-dark);
+	margin: 10px;
+}
+
+.input-container {
+    height: 60px;
+}
+
+#form-container .text-input {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 100%;
+}
+
+#add-button {
+    width: 50%;
+    float: left;
+}
+
+#cancel-button {
+    width: 50%;
+    float: right;
+}
+
+#read{
+    top: 5px;
+}
